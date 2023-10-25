@@ -24,7 +24,7 @@ Quattrocento LSL App is released under the [GPLv3 license](LICENSE).
 
 This software uses the following components:
 
-Qt, [LGPL license](https://qt.io/qt-licensing-terms)
+Qt, [LGPL license](https://doc.qt.io/qt-5/lgpl.html)
 
 Boost, [Boost software license](https://www.boost.org/users/license.html)
 
@@ -34,7 +34,7 @@ LSL App Template CPP Qt, [MIT license](https://github.com/labstreaminglayer/AppT
 
 # Citing QuattrocentoLSLApp
 
-If you use Quattrocento LSL App in your experiments, please cite the GitHub repository <https://github.com/neurofreiburg/yaga>.
+If you use Quattrocento LSL App in your experiments, please cite the GitHub repository <https://github.com/neurofreiburg/QuattrocentoLSLApp>.
 
 # Contact
 
