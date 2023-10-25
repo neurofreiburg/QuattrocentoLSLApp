@@ -1,0 +1,29 @@
+﻿{
+  "configurations": [
+    {
+      "name": "x64-Release",
+      "generator": "Ninja",
+      "configurationType": "Release",
+      "inheritEnvironments": [ "msvc_x64_x64" ],
+      "buildRoot": "${projectDir}\\out\\build\\${name}",
+      "installRoot": "${projectDir}\\out\\install\\${name}",
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "",
+      "ctestCommandArgs": "",
+      "variables": [
+        {
+          "name": "Qt5_DIR",
+          "value": "C:\\Qt\\5.15.2\\msvc2019_64\\lib\\cmake\\Qt5"
+        },
+        {
+          "name": "BOOST_ROOT",
+          "value": "${projectDir}\\extern\\boost_1_80_0"
+        },
+        {
+          "name": "LSL_INSTALL_ROOT",
+          "value": "${projectDir}\\extern\\liblsl-1.16.0"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1554 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>365</width>
+    <height>704</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>LSL Streaming App</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QFormLayout" name="formLayout_2">
+    <item row="1" column="0" colspan="2">
+     <widget class="QGroupBox" name="input_conf">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="title">
+       <string>Input Configuration</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="2" column="2">
+        <widget class="QComboBox" name="in1_mode">
+         <property name="currentIndex">
+          <number>-1</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>Monopolar</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Differential</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLabel" name="label_active">
+         <property name="text">
+          <string>Active</string>
+         </property>
+        </widget>
+       </item>
+       <item row="13" column="0">
+        <widget class="QLabel" name="label_multin4">
+         <property name="text">
+          <string>MULTIPLE IN 4</string>
+         </property>
+        </widget>
+       </item>
+       <item row="12" column="1">
+        <widget class="QCheckBox" name="multin3_active">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="4">
+        <widget class="QComboBox" name="in6_lp">
+         <property name="currentIndex">
+          <number>-1</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>130 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>500 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>900 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>4400 Hz</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="2" column="3">
+        <widget class="QComboBox" name="in1_hp">
+         <property name="currentIndex">
+          <number>-1</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>0.7 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>10 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>100 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>200 Hz</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QCheckBox" name="in5_active">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="12" column="2">
+        <widget class="QComboBox" name="multin3_mode">
+         <property name="currentIndex">
+          <number>-1</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>Monopolar</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Differential</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="2" column="4">
+        <widget class="QComboBox" name="in1_lp">
+         <property name="currentIndex">
+          <number>-1</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>130 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>500 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>900 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>4400 Hz</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="10" column="4">
+        <widget class="QComboBox" name="multin1_lp">
+         <property name="currentIndex">
+          <number>-1</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>130 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>500 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>900 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>4400 Hz</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="5" column="4">
+        <widget class="QComboBox" name="in4_lp">
+         <property name="currentIndex">
+          <number>-1</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>130 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>500 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>900 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>4400 Hz</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="12" column="3">
+        <widget class="QComboBox" name="multin3_hp">
+         <property name="currentIndex">
+          <number>-1</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>0.7 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>10 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>100 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>200 Hz</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="7" column="1">
+        <widget class="QCheckBox" name="in6_active">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="4">
+        <widget class="QLabel" name="label_lp">
+         <property name="text">
+          <string>Low Pass</string>
+         </property>
+        </widget>
+       </item>
+       <item row="13" column="3">
+        <widget class="QComboBox" name="multin4_hp">
+         <property name="currentIndex">
+          <number>-1</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>0.7 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>10 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>100 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>200 Hz</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="13" column="1">
+        <widget class="QCheckBox" name="multin4_active">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="12" column="0">
+        <widget class="QLabel" name="label_multin3">
+         <property name="text">
+          <string>MULTIPLE IN 3</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="3">
+        <widget class="QComboBox" name="in6_hp">
+         <property name="currentIndex">
+          <number>-1</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>0.7 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>10 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>100 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>200 Hz</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="9" column="0">
+        <widget class="QLabel" name="label_in8">
+         <property name="text">
+          <string>IN 8</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="3">
+        <widget class="QComboBox" name="in4_hp">
+         <property name="currentIndex">
+          <number>-1</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>0.7 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>10 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>100 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>200 Hz</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QCheckBox" name="in1_active">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="4">
+        <widget class="QComboBox" name="in7_lp">
+         <property name="currentIndex">
+          <number>-1</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>130 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>500 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>900 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>4400 Hz</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="7" column="2">
+        <widget class="QComboBox" name="in6_mode">
+         <property name="currentIndex">
+          <number>-1</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>Monopolar</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Differential</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="12" column="4">
+        <widget class="QComboBox" name="multin3_lp">
+         <property name="currentIndex">
+          <number>-1</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>130 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>500 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>900 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>4400 Hz</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="8" column="0">
+        <widget class="QLabel" name="label_in7">
+         <property name="text">
+          <string>IN 7</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_in2">
+         <property name="text">
+          <string>IN 2</string>
+         </property>
+        </widget>
+       </item>
+       <item row="11" column="0">
+        <widget class="QLabel" name="label_multin2">
+         <property name="text">
+          <string>MULTIPLE IN 2</string>
+         </property>
+        </widget>
+       </item>
+       <item row="10" column="1">
+        <widget class="QCheckBox" name="multin1_active">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="2">
+        <widget class="QComboBox" name="in3_mode">
+         <property name="currentIndex">
+          <number>-1</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>Monopolar</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Differential</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="label_in5">
+         <property name="text">
+          <string>IN 5</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="4">
+        <widget class="QComboBox" name="in5_lp">
+         <property name="currentIndex">
+          <number>-1</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>130 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>500 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>900 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>4400 Hz</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="label_in4">
+         <property name="text">
+          <string>IN 4</string>
+         </property>
+        </widget>
+       </item>
+       <item row="11" column="1">
+        <widget class="QCheckBox" name="multin2_active">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_in1">
+         <property name="text">
+          <string>IN 1</string>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="3">
+        <widget class="QComboBox" name="in8_hp">
+         <property name="currentIndex">
+          <number>-1</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>0.7 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>10 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>100 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>200 Hz</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QCheckBox" name="in2_active">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="label_in3">
+         <property name="text">
+          <string>IN 3</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QCheckBox" name="in3_active">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="13" column="2">
+        <widget class="QComboBox" name="multin4_mode">
+         <property name="currentIndex">
+          <number>-1</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>Monopolar</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Differential</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="13" column="4">
+        <widget class="QComboBox" name="multin4_lp">
+         <property name="currentIndex">
+          <number>-1</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>130 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>500 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>900 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>4400 Hz</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QLabel" name="label_mode">
+         <property name="text">
+          <string>Mode</string>
+         </property>
+        </widget>
+       </item>
+       <item row="10" column="0">
+        <widget class="QLabel" name="label_multin1">
+         <property name="text">
+          <string>MULTIPLE IN 1</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="3">
+        <widget class="QComboBox" name="in3_hp">
+         <property name="currentIndex">
+          <number>-1</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>0.7 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>10 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>100 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>200 Hz</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="11" column="2">
+        <widget class="QComboBox" name="multin2_mode">
+         <property name="currentIndex">
+          <number>-1</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>Monopolar</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Differential</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="4" column="4">
+        <widget class="QComboBox" name="in3_lp">
+         <property name="currentIndex">
+          <number>-1</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>130 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>500 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>900 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>4400 Hz</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="3" column="2">
+        <widget class="QComboBox" name="in2_mode">
+         <property name="currentIndex">
+          <number>-1</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>Monopolar</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Differential</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QCheckBox" name="in4_active">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="4">
+        <widget class="QComboBox" name="in8_lp">
+         <property name="currentIndex">
+          <number>-1</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>130 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>500 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>900 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>4400 Hz</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="9" column="1">
+        <widget class="QCheckBox" name="in8_active">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QLabel" name="label_hp">
+         <property name="text">
+          <string>High Pass</string>
+         </property>
+        </widget>
+       </item>
+       <item row="11" column="3">
+        <widget class="QComboBox" name="multin2_hp">
+         <property name="currentIndex">
+          <number>-1</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>0.7 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>10 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>100 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>200 Hz</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="8" column="1">
+        <widget class="QCheckBox" name="in7_active">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="11" column="4">
+        <widget class="QComboBox" name="multin2_lp">
+         <property name="currentIndex">
+          <number>-1</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>130 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>500 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>900 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>4400 Hz</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="5" column="2">
+        <widget class="QComboBox" name="in4_mode">
+         <property name="currentIndex">
+          <number>-1</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>Monopolar</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Differential</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="8" column="3">
+        <widget class="QComboBox" name="in7_hp">
+         <property name="currentIndex">
+          <number>-1</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>0.7 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>10 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>100 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>200 Hz</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="3" column="3">
+        <widget class="QComboBox" name="in2_hp">
+         <property name="currentIndex">
+          <number>-1</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>0.7 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>10 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>100 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>200 Hz</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="9" column="2">
+        <widget class="QComboBox" name="in8_mode">
+         <property name="currentIndex">
+          <number>-1</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>Monopolar</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Differential</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="6" column="2">
+        <widget class="QComboBox" name="in5_mode">
+         <property name="currentIndex">
+          <number>-1</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>Monopolar</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Differential</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="6" column="3">
+        <widget class="QComboBox" name="in5_hp">
+         <property name="currentIndex">
+          <number>-1</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>0.7 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>10 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>100 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>200 Hz</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_input">
+         <property name="text">
+          <string>Input</string>
+         </property>
+        </widget>
+       </item>
+       <item row="10" column="2">
+        <widget class="QComboBox" name="multin1_mode">
+         <property name="currentIndex">
+          <number>-1</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>Monopolar</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Differential</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="10" column="3">
+        <widget class="QComboBox" name="multin1_hp">
+         <property name="currentIndex">
+          <number>-1</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>0.7 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>10 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>100 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>200 Hz</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="8" column="2">
+        <widget class="QComboBox" name="in7_mode">
+         <property name="currentIndex">
+          <number>-1</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>Monopolar</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Differential</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="3" column="4">
+        <widget class="QComboBox" name="in2_lp">
+         <property name="currentIndex">
+          <number>-1</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>130 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>500 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>900 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>4400 Hz</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="7" column="0">
+        <widget class="QLabel" name="label_in6">
+         <property name="text">
+          <string>IN 6</string>
+         </property>
+        </widget>
+       </item>
+       <item row="14" column="0">
+        <widget class="QLabel" name="label_aux">
+         <property name="text">
+          <string>AUX</string>
+         </property>
+        </widget>
+       </item>
+       <item row="14" column="1">
+        <widget class="QCheckBox" name="aux_active">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QGroupBox" name="amp_conf">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="title">
+       <string>Amplifier Configuration</string>
+      </property>
+      <layout class="QFormLayout" name="formLayout_3">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_stream_name">
+         <property name="text">
+          <string>Stream Name</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="stream_name">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="maxLength">
+          <number>20</number>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_ip">
+         <property name="text">
+          <string>Amplifier IP Adress</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="ip">
+         <property name="inputMask">
+          <string/>
+         </property>
+         <property name="maxLength">
+          <number>100</number>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_sampling_frequency">
+         <property name="text">
+          <string>Sampling Frequency</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QComboBox" name="sampling_frequency">
+         <property name="currentIndex">
+          <number>-1</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>512 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>2048 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>5120 Hz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>10240 Hz</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QGroupBox" name="output_conf">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="title">
+       <string>Analog Output Configuration</string>
+      </property>
+      <layout class="QFormLayout" name="formLayout">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_source_connector">
+         <property name="text">
+          <string>Source Connector</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QComboBox" name="source_connector">
+         <property name="currentIndex">
+          <number>-1</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>IN1</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>IN2</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>IN3</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>IN4</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>IN5</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>IN6</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>IN7</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>IN8</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>MULTIPLE IN1</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>MULTIPLE IN2</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>MULTIPLE IN3</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>MULTIPLE IN4</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>AUX IN</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_source_channel">
+         <property name="text">
+          <string>Source Channel</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QComboBox" name="source_channel"/>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_output_gain">
+         <property name="text">
+          <string>Output Gain</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QComboBox" name="output_gain">
+         <property name="currentText">
+          <string/>
+         </property>
+         <property name="currentIndex">
+          <number>-1</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>1</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>2</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>4</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>16</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="3" column="0" colspan="2">
+     <widget class="QPushButton" name="linkButton">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>23</height>
+       </size>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Start Recording</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+      <property name="autoDefault">
+       <bool>false</bool>
+      </property>
+      <property name="default">
+       <bool>false</bool>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>365</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="actionLoad_Configuration"/>
+    <addaction name="actionSave_Configuration"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuAbout"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionLoad_Configuration">
+   <property name="text">
+    <string>&amp;Load Configuration</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+L</string>
+   </property>
+  </action>
+  <action name="actionSave_Configuration">
+   <property name="text">
+    <string>&amp;Save Configuration</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="text">
+    <string>&amp;Quit</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>&amp;About</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>stream_name</tabstop>
+  <tabstop>ip</tabstop>
+  <tabstop>sampling_frequency</tabstop>
+  <tabstop>in1_active</tabstop>
+  <tabstop>in1_mode</tabstop>
+  <tabstop>in1_hp</tabstop>
+  <tabstop>in1_lp</tabstop>
+  <tabstop>in2_active</tabstop>
+  <tabstop>in2_mode</tabstop>
+  <tabstop>in2_hp</tabstop>
+  <tabstop>in2_lp</tabstop>
+  <tabstop>in3_active</tabstop>
+  <tabstop>in3_mode</tabstop>
+  <tabstop>in3_hp</tabstop>
+  <tabstop>in3_lp</tabstop>
+  <tabstop>in4_active</tabstop>
+  <tabstop>in4_mode</tabstop>
+  <tabstop>in4_hp</tabstop>
+  <tabstop>in4_lp</tabstop>
+  <tabstop>in5_active</tabstop>
+  <tabstop>in5_mode</tabstop>
+  <tabstop>in5_hp</tabstop>
+  <tabstop>in5_lp</tabstop>
+  <tabstop>in6_active</tabstop>
+  <tabstop>in6_mode</tabstop>
+  <tabstop>in6_hp</tabstop>
+  <tabstop>in6_lp</tabstop>
+  <tabstop>in7_active</tabstop>
+  <tabstop>in7_mode</tabstop>
+  <tabstop>in7_hp</tabstop>
+  <tabstop>in7_lp</tabstop>
+  <tabstop>in8_active</tabstop>
+  <tabstop>in8_mode</tabstop>
+  <tabstop>in8_hp</tabstop>
+  <tabstop>in8_lp</tabstop>
+  <tabstop>multin1_active</tabstop>
+  <tabstop>multin1_mode</tabstop>
+  <tabstop>multin1_hp</tabstop>
+  <tabstop>multin1_lp</tabstop>
+  <tabstop>multin2_active</tabstop>
+  <tabstop>multin2_mode</tabstop>
+  <tabstop>multin2_hp</tabstop>
+  <tabstop>multin2_lp</tabstop>
+  <tabstop>multin3_active</tabstop>
+  <tabstop>multin3_mode</tabstop>
+  <tabstop>multin3_hp</tabstop>
+  <tabstop>multin3_lp</tabstop>
+  <tabstop>multin4_active</tabstop>
+  <tabstop>multin4_mode</tabstop>
+  <tabstop>multin4_hp</tabstop>
+  <tabstop>multin4_lp</tabstop>
+  <tabstop>aux_active</tabstop>
+  <tabstop>source_connector</tabstop>
+  <tabstop>source_channel</tabstop>
+  <tabstop>output_gain</tabstop>
+  <tabstop>linkButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
