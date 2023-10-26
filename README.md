@@ -12,7 +12,7 @@ There is no special installation step required. Download _QuattrocentoLSLApp.zip
 
 # Usage
 
-![screenhot](Quattrocento LSL App Screenshot.png)
+![screenhot](Quattrocento_LSL_App_Screenshot.png)
 
 **Amplifier Configuration:**
 
