@@ -1,6 +1,6 @@
 # Quattrocento LSL App
 
-This app connects to the OTB Quattrocento amplifier and streams the data to the network via [Lab Streaming Layer (LSL)](https://labstreaminglayer.org)
+**Quattrocento LSL App** connects to an **OTB Quattrocento amplifier** and streams the data to the network as a **[Lab Streaming Layer (LSL) stream](https://labstreaminglayer.org)**.
 
 # Requirements
 
@@ -8,13 +8,31 @@ Quattrocento LSL App requires Windows 10 or newer.
 
 # Installation
 
-No particular installation step is required. Download _QuattrocentoLSLApp.zip_ from [GitHub](https://github.com/neurofreiburg/QuattrocentoLSLApp/releases), unpack it, and run the Quattrocento LSL App.
+There is no special installation step required. Download _QuattrocentoLSLApp.zip_ from [GitHub](https://github.com/neurofreiburg/QuattrocentoLSLApp/releases), unpack it, and run Quattrocento LSL App.
 
 # Usage
 
-TODO
+![screenhot](Quattrocento LSL App Screenshot.png)
 
-# Building Quattrocento LSL App
+**Amplifier Configuration:**
+
+The application allows you to specify the LSL stream name, the amplifier IP address and the sampling frequency. Usually, you do not need to change the LSL stream name or the IP address of the amplifier.
+
+**Input Configuration:**
+
+You can select the amplifier input ports (_IN 1-8_, _MULTIPLE IN 1-4_, _AUX_), recording mode (_monopolar_ or _differential_), and filter settings.
+
+**Analog Output Configuration:**
+
+You can select the input channels to be forwarded to the amplifier's analog output port.
+
+**Saving/Loading a Configuration:**
+
+Quattrocento LSL App allows you to load/save your configuration (_File_ -> _Load/Save Configuration_). You can also load a configuration file at program start by passing the file name as a command line parameter:
+
+`QuattrocentoLSLApp.exe conf.cfg`
+
+# Building the Quattrocento LSL App
 
 Quattrocento LSL App is based on the [C++ app template](https://github.com/labstreaminglayer/AppTemplate_cpp_qt) from the LSL project. You can find the build instructions [here](https://labstreaminglayer.readthedocs.io/dev/app_build.html).
 
